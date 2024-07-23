@@ -1,0 +1,31 @@
+/* For the profile pic*/
+.profile-pic {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+/* For the contact section*/
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+.contact li {
+    margin: 0 15px;
+}
+.contact h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+.contact span, .contact a {
+    font-size: 1em;
+    color: #000;
+}
