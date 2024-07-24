@@ -29,3 +29,18 @@
     font-size: 1em;
     color: #000;
 }
+
+/*Job heading*/
+.job-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job-info h2 {
+    margin: 0;
+}
+
+.job-info p {
+    margin: 0;
+}
