@@ -1,12 +1,8 @@
 <!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
-		<title>Hyperspace by HTML5 UP</title>
+		<title>Dinesh Kannan</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/styles.css" />
@@ -60,7 +56,7 @@
 								</li>
 								<li>
 									<h3>Email</h3>
-									<a href="mailto:dkannan@ncsu.edu">dkannan@ncsu.edu</a>
+									<a href="mailto:dineshkannan010@gmail.com">dineshkannan010@gmail.com</a>
 								</li>
 								<li>
 									<h3>Phone</h3>
@@ -184,7 +180,7 @@
 				</section>
 
 				<!-- Four -->
-				<section id="four" class="wrapper style2 spotlights">
+				<section id="four" class="wrapper style2 spotlights" style="min-height: 45em;">
 					<section>
 						<div class="inner">
 							<h2 style="padding-left: 45pt;padding-top: 15pt;">Skills</h2>
@@ -288,21 +284,20 @@
 				</section>
 
 				<!-- Five -->
-					<section id="five" class="wrapper style1 fade-up">
+					<section id="five" class="wrapper style1 fade-up" style="min-height: 41em;">
 						<div class="inner">
 							<h2>Get in touch</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
 							<div class="split style1">
 								<section>
-									<form method="post" action="#">
+									<form id="contactForm" onsubmit="sendEmail(); return false;">
 										<div class="fields">
 											<div class="field half">
 												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
+												<input type="text" name="name" id="name" required />
 											</div>
 											<div class="field half">
 												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
+												<input type="text" name="email" id="email" required />
 											</div>
 											<div class="field">
 												<label for="message">Message</label>
@@ -310,7 +305,7 @@
 											</div>
 										</div>
 										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
+											<li><button type="button" class="button submit" >Send Message</button></li>
 										</ul>
 									</form>
 								</section>
@@ -364,7 +359,21 @@
 	  				});
 				});
   			</script>
-  
 
+			<script>
+				 function sendEmail() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+
+            var subject = "New message from " + name;
+            var body = "Name: " + name + "%0D%0AEmail: " + email + "%0D%0AMessage: " + message;
+
+            var mailtoLink = "mailto:dineshkannan010@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+
+            window.location.href = mailtoLink;
+        }
+			</script>
+  
 	</body>
 </html>

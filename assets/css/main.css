@@ -2999,7 +2999,7 @@ input, select, textarea {
 		-webkit-flex-direction: row;
 		-ms-flex-direction: row;
 		flex-direction: row;
-		min-height: 43em;
+		min-height: 20em;
 	}
 
 		body.is-ie .spotlights > section {
