@@ -10,6 +10,14 @@
     margin-right: 20px;
 }
 
+.name {
+    display: flex;
+}
+
+.name h1 {
+    margin: 0 10px; /* Optional: Add some space between the names */
+}
+
 /* For the contact section*/
 
 .contact {
@@ -27,7 +35,7 @@
 }
 .contact span, .contact a {
     font-size: 1em;
-    color: #000;
+    color: #2319aa;
 }
 
 /*Job heading*/
@@ -44,3 +52,53 @@
 .job-info p {
     margin: 0;
 }
+
+/*Introduction*/
+.text-slider {
+    font-size: 36px; /* Adjust this value to increase/decrease font size */
+    font-weight: bold;
+  }
+
+/*Skills*/
+
+.skills_section {
+
+    padding: 2em 20em 3em 3em ;
+    width: 100%;
+    border-top: solid 1px rgba(255, 255, 255, 0.15);
+    position: relative;
+}
+.tools_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 80px;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 70px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 75%; /* Position the tooltip below the icon */
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: small;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
