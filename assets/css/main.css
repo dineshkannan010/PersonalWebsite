@@ -1835,7 +1835,7 @@ input, select, textarea {
 		border: solid 1px !important;
 		border-color: rgba(255, 255, 255, 0.15) !important;
 		border-radius: 3em;
-		color: #ffffff !important;
+		color: #b33434 !important;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.6em;
@@ -1899,8 +1899,9 @@ input, select, textarea {
 		button.small,
 		.button.small {
 			font-size: 0.5em;
-			background-color: #734eb7;
-			opacity: 0.5;
+			background-color: #1d0549;
+			opacity: 0.9;
+			color: #7e232317;
 		}
 
 		input[type="submit"].large,
@@ -2998,7 +2999,7 @@ input, select, textarea {
 		-webkit-flex-direction: row;
 		-ms-flex-direction: row;
 		flex-direction: row;
-		min-height: 20em;
+		min-height: 43em;
 	}
 
 		body.is-ie .spotlights > section {
